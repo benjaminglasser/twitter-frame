@@ -1,6 +1,7 @@
 .Divider {
     position: fixed;
     bottom: 650px;
+    top: 35%;
     width: 80vw;
     height: 1.2vw;
     right: 0%;
