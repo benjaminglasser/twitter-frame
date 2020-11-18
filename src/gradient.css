@@ -1,0 +1,5 @@
+.Gradient {
+    width: 500vw;
+    height: 100vh;
+    background-image: linear-gradient(#843794, #29184E);
+}

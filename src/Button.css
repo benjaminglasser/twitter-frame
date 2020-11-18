@@ -1,0 +1,10 @@
+.Button {
+    margin-right: 19px;
+    margin-left: 19px;
+    padding: 9px 27px;
+    border-radius: 19px;
+    background-image: linear-gradient(180deg, #da2a4a, #7b1c4e);
+    box-shadow: 1px 1px 6px -2px #000;
+    font-size: 1vw;
+    color: white;
+}

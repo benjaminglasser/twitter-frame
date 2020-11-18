@@ -1,0 +1,28 @@
+.Upper {
+font-family: 'Gilroy-Light';
+position: absolute;
+top: auto;
+bottom: 585.5px;
+left: 10%;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+width: 80vw;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-webkit-flex-direction: row;
+flex-direction: row;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+font-size: 9vw;
+line-height: 9vw;
+text-align: center;
+
+}

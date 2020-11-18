@@ -1,51 +1,33 @@
-import {
-  useState,
-  useEffect,
- } from 'react'
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
+import React, { Component } from 'react';
+import Tweet from './tweet.js';
+import './tweet.css';
+import Upper from "./upper-section";
+import "./upper-section.css";
+import "./calendar.css";
+import "./clock.css";
+import "./App.css";
+import "./divider.css";
+import "./gradient.css";
 
-const initialTweets = [
-]
 
-function App() {
-  const [tweets, setTweets] = useState(initialTweets)
-  const [current, setCurrent] = useState(0)
-  const [loading, setLoading] = useState(false)
-  
-  // useEffect(() => {
-  //   rehydrateTweets()
-  // },[])
 
-  function rehydrateTweets() {
-    axios.get('http://localhost:8000/latest')
-      .then((response) => {
-        setTweets(response.data);
-        setLoading(false)
-      })
-  }
+
+class App extends Component {
+  render() {
   return (
-    <div className="App">
-     { loading
-        ? <div className="loader">Loading tweets...</div>
-        : tweets.map((tweet, index) => {
-            return(
-              <div key={index}>
-                {tweet.text}
-              </div>
-            )
-          })
-     }
-     <button onClick={e => {
-       setCurrent(current+1)
-     }}>next</button>
-     <button onClick={e => {
-       setLoading(true)
-       rehydrateTweets()
-     }}>Refresh Tweets</button>
+    <div className="Gradient">
+      <div>
+        <div><Upper /></div>
+        <div className="Divider" />
+        <div className="Tweet"><Tweet /></div>
+      </div>
     </div>
+    
+ 
   );
+  }
 }
+
+
 
 export default App;
