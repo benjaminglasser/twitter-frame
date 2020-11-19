@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Tweet from './tweet.js';
-import './tweet.css';
 import Upper from "./upper-section";
 import "./upper-section.css";
 import "./calendar.css";
@@ -19,7 +18,7 @@ class App extends Component {
       <div>
         <div><Upper /></div>
         <div className="Divider" />
-        <div className="Tweet"><Tweet /></div>
+        <Tweet />
       </div>
     </div>
     
