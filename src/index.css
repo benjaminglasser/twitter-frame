@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
+html, body, #root, .Gradient, main { height: 100%; }
 
 body {
   margin: 0;
@@ -13,3 +14,5 @@ body {
 code {
   font-family: 'Work-Sans';
 }
+
+* { box-sizing: border-box }

@@ -1,13 +1,5 @@
 .Tweet {
-
     font-family: 'Gilroy-Light';
     position: relative;
-    left: 2%;
-    top: 60vh;
-    right: 0%;
-    bottom: 10%;
-    width: 80vw;
-    font-size: 4vw;
-    line-height: 4vw;
     text-align: center;
 }

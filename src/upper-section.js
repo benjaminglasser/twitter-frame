@@ -6,8 +6,8 @@ class Upper extends Component {
     render() {
         return (
             <div className="Upper">
-                <div><Clock /></div>
-                <div><Calendar /></div>
+                <Clock />
+                <Calendar />
             </div>
         );
 

@@ -1,28 +1,25 @@
 .Upper {
 font-family: 'Gilroy-Light';
-position: absolute;
-top: 10%;
+/* position: absolute; */
+/* top: 10%;
 bottom: 585.5px;
-left: 10%;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
+left: 10%; */
 display: flex;
-width: 80vw;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
--webkit-flex-direction: row;
+/* width: 80vw; */
+box-orient: horizontal;
+box-direction: normal;
 flex-direction: row;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
+box-pack: justify;
+justify-content: space-between;
 -ms-flex-pack: justify;
 justify-content: space-between;
--webkit-box-align: center;
--webkit-align-items: center;
+box-align: center;
+align-items: center;
 -ms-flex-align: center;
 align-items: center;
-font-size: 9vw;
-line-height: 9vw;
+/* font-size: 9vw;
+line-height: 9vw; */
 text-align: center;
 
+font-size: 6em;
 }

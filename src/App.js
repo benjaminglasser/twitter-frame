@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Tweet from './tweet.js';
 import Upper from "./upper-section";
 import "./upper-section.css";
@@ -7,26 +7,54 @@ import "./clock.css";
 import "./App.css";
 import "./divider.css";
 import "./gradient.css";
+import LinkPreview from "./LinkPreview";
+import axios from 'axios';
 
 
+const initialTweets = [
+]
 
+export default (props) => {
+  const [tweets, setTweets] = useState(initialTweets)
+  const [current, setCurrent] = useState(0)
+  const [loading, setLoading] = useState(false)
 
-class App extends Component {
-  render() {
+  function rehydrateTweets() {
+    setLoading(true)
+    axios.get('http://localhost:8000/latest')
+      .then((response) => {
+        setTweets(response.data);
+        setLoading(false)
+      })
+  }
+
+  const tweet = tweets[current]
+
   return (
     <div className="Gradient">
-      <div>
-        <div><Upper /></div>
-        <div className="Divider" />
-        <Tweet />
-      </div>
-    </div>
-    
- 
-  );
-  }
+      <main>
+        <header>
+          <Upper />
+          <div className="Divider" />
+        </header>
+        <Tweet tweet={tweet} loading={loading} />
+        <LinkPreview />
+      
+        <div className="buttons-cnr">
+          <button
+            className="Button"
+            onClick={e => {
+              setCurrent(current+1)
+              // if we're at the end i.e current === tweets.length - 1...
+              // rehydrateTweets().then(() => setCurrent(0))
+            }}>next</button>
+          <button
+            className="Button"
+            onClick={e => {
+              rehydrateTweets()
+            }}>Refresh</button>
+        </div>
+        </main>
+    </div> 
+  )
 }
-
-
-
-export default App;
