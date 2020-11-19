@@ -38,7 +38,7 @@ export default (props) => {
           <div className="Divider" />
         </header>
         <Tweet tweet={tweet} loading={loading} />
-        <LinkPreview />
+        <LinkPreview tweet={tweet} />
       
         <div className="buttons-cnr">
           <button
