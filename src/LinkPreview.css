@@ -1,0 +1,13 @@
+img {
+    max-width: 35vw;
+    min-width: 5vw;
+    
+}
+
+.LinkPreview {
+    
+    text-align: left;
+    justify-items: top;
+    margin: -1em 0em;
+    
+}

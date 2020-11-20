@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import "./LinkPreview.css";
 
 export default (props) => {
     const { tweet } = props

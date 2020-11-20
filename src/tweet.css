@@ -1,5 +1,39 @@
-.Tweet {
+.tweet {
     font-family: 'Gilroy-Light';
-    position: relative;
-    text-align: center;
+    
+}
+
+.tweet-content {
+    display: grid;
+    grid-template: 1fr 1fr;
+    padding: 0em 2em 0em 0em;
+    text-align: left;
+    grid-gap: 3em;
+
+}
+
+.tweet-upper {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    align-items: center;
+    
+
+}
+
+.tweet-username {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 2vw;
+}
+
+.tweet-text {
+    font-family: 'Gilroy-Light';
+    font-size: 3vw;
+}
+
+.tweet-avatar {
+    border-radius: 50%;
+} 
+
+.tweet-time {
+    font-size: 1.5vw;
 }

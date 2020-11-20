@@ -29,15 +29,32 @@ main {
   display: grid;
   grid-template: min-content 1fr min-content / 1fr 1fr;
   width: 100%;
-  padding: 2em 4em;
+  padding: 5em 5em 3em 5em;
   box-sizing: border-box;
 }
 
-header {
+.Lower {
+  display: grid;
+  grid-template-columns: 20fr .3fr;
   grid-column: 1 / span 2;
+  
+  
 }
+
+header {
+  display: grid;
+  grid-column: 1 / span 2;
+  
+  grid-auto-rows: minmax(30px, 9vw);
+  align-items: center;
+  
+  
+}
+
+
 
 .buttons-cnr {
   grid-column: 1 / span 2;
   text-align: center;
+  
 }
