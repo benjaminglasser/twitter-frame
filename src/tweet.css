@@ -14,7 +14,8 @@
 
 .tweet-upper {
     display: grid;
-    grid-template-columns: 6rem 1fr;
+    grid-template-columns: 30px 1fr;
+    column-gap: 4vw;
     align-items: center;
     
 
@@ -28,12 +29,19 @@
 .tweet-text {
     font-family: 'Gilroy-Light';
     font-size: 3vw;
+    text-align: center;
 }
 
-.tweet-avatar {
+#avatar {
     border-radius: 50%;
+    background-color: blue;
 } 
 
 .tweet-time {
     font-size: 1.5vw;
+}
+
+.no-tweet {
+    text-align: center;
+    font-size: 5vw;
 }
