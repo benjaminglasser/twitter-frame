@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import moment from "moment";
 
 export class Calendar extends React.Component {
     constructor() {
         super();
-
+        
         var today = new Date(),
             date =  (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
 
@@ -15,7 +16,7 @@ export class Calendar extends React.Component {
     render() {
         return (
             <div className='date'>
-                {this.state.date}
+                {moment(this.state.date).format("MM/DD/YY")}
             </div>
         );
     }

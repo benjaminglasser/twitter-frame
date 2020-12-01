@@ -15,7 +15,7 @@
 .tweet-upper {
     display: grid;
     grid-template-columns: 30px 1fr;
-    column-gap: 4vw;
+    column-gap: 4.5vw;
     align-items: center;
     
 
