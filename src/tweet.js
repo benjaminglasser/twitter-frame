@@ -5,9 +5,9 @@ import moment from "moment";
 
   
 function Tweet(props) {
-  const { loading, tweet } = props
+  const { loading, tweet, transLength, transitioning } = props
   return (
-    <div className="Tweet">
+    <div className={`Tweet${ transitioning ? ' exit' : '' }`} style={{animationDuration: `${transLength}ms`}}>
       { loading
         ? <div className="loader">Loading tweets...</div>
         : null }
